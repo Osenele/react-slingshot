@@ -33,6 +33,7 @@ jobs:
       - image: cimg/node:13.8.0
     steps:
     - checkout
+    - run: npm install
     - run:
         name: "Test Step"
         command: "npm run test"
